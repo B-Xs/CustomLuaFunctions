@@ -1,0 +1,16 @@
+function fromstring(a)
+    local b = tonumber(a)
+    if b ~= nil then
+        return b
+    end
+    if a == "true" then
+        return true
+    elseif a == "false" then
+        return false
+    end
+    return a
+end
+--// Example here :)
+local a = fromstring("69")
+
+if a < 420 then print("69 is smaller") end
